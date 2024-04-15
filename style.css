@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
 
 body {
-  background-color: #51e2f5;
+  background-color: rgba(210,56,108, 0.9);
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -27,18 +27,23 @@ a:hover {
 
 ul {
   list-style-type: none;
+  padding: 0
 }
 
-li {
-  display: inline-block;
-  padding: 10px;
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px
 }
 
 .card {
   background: #d0bdf4;
   margin: 25px auto;
-  border: 1px solid lightgreen;
+  border: 1px solid black;
   padding: 20px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 5px red, 6px 6px 6px blue
 }
 
 .img-circle {
@@ -66,20 +71,19 @@ p {
   font-size: 50px;
 }
 
+
 @media (max-width: 960px) {
   .container {
     width: 700px;
   }
 }
 
-/* For screens up to 720px width */
 @media (max-width: 720px) {
   .container {
     width: 500px;
   }
 }
 
-/* For screens up to 540px width */
 @media (max-width: 540px) {
   .container {
     width: 300px;
